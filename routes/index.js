@@ -35,8 +35,8 @@ router.get("/csvparse", (req, res) => {
     })
     .on("end", () => {
       console.log(result);
+      res.render("students", { result });
     });
-  res.render("students", { students: result });
 });
 
 module.exports = router;
