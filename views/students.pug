@@ -1,0 +1,17 @@
+// Tables.pug
+html
+  table(style='width:100%', border='1')
+    thead
+      th Student Name
+      th Pace Info
+      th Best Cell
+      th Email Address
+      th Instrument
+      th Day and Time
+      th Location
+      th Birthday
+      th Relation
+    tbody
+      each student in students
+        tr
+          td #{student.name}
